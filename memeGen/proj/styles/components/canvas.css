@@ -1,0 +1,37 @@
+.meme-box{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    /* border: 1px red solid; */
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.canvas-box{
+    position: relative;
+}
+
+.canvas{
+    position: absolute;
+}
+
+.canvas-bottom{
+    position: relative;
+
+    z-index: -1;
+}
+
+
+
+canvas{
+    border: black 1px solid;
+}
+
+
+.canvas-copy{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+}

@@ -1,0 +1,30 @@
+header h1{
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.1rem;
+
+}
+
+nav{
+    background-color: rgb(218, 218, 218);   
+    align-items: center;
+}
+
+ul li{
+    all: none;
+    list-style: none;
+    color: black;  
+}
+
+
+ul li:first-child{
+    margin-inline-end: 1em;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 100px;
+}
+

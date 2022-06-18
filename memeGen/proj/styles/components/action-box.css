@@ -1,0 +1,139 @@
+.actions-box{
+    height: 350px;
+    width: 500px;   
+    display: flex;
+    flex-direction: column;
+    
+    /* border: 1px red solid; */
+}
+
+.save-box{
+    /* border: 1px green solid; */
+}
+
+
+
+.actions-box input{
+    /* margin-bottom: 0.3em; */
+    /* border: 1px green solid; */
+
+    width: 500px;
+
+    
+}
+
+.action-btns{
+    margin: auto;
+    padding-inline-start: 3.2em;
+    /* border: 1px rgb(214, 52, 52) solid; */
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+}
+
+.delete{
+    /* border: 1px white solid; */
+    justify-self: center;
+    align-self: center;
+    padding-inline-start: 0.3rem;
+    position: relative;
+    bottom: 6px;
+
+}
+
+.action-btn{
+    width: 60px;
+    height: 60px;
+    padding-inline-start: 0.3rem;
+    /* margin-bottom: 0.3rem; */
+    padding: 0;
+    margin: auto;
+
+    background-color: #A4BAB7;
+    border-radius: 5px;    
+}
+
+.action-btn span{
+    font-size: 1.5em;
+}
+
+.action-btn.delete{
+   width: 2em; 
+   height: 2em;
+   background-image: url(../../graphics/icons/delete.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   
+
+}
+
+.download-btns{
+    /* border: 1px green solid; */
+}
+
+
+.size-input{
+   width: 60px;
+   height: 60px;
+
+}
+
+.btns{
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* BUTTONS */
+
+.fa-trash::before{
+    content: "\f2ed";
+}
+
+.fa-font::before{
+    content: "\f031";
+}
+
+
+.fa-ltr::before{
+    content: "\f036";
+}
+
+
+.fa-center::before{
+    content: "\f037";
+}
+
+
+.fa-rtl::before{
+    content: "\f038";
+}
+
+.fa-pallete::before{
+    content: "\f53f";
+}
+
+.fa-pallete{
+    justify-content: center;
+    position: relative;
+}
+
+.fa-pallete input{
+    width: 2em;
+    position: absolute;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    background-color: white;
+}
+
+.fa-download::before{
+    content: "\f019";
+    color: rgb(255, 166, 0);
+}
+
+.fa-save::before{
+    content: "\f0c7";
+    color: #080F0F;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="memeGen/proj/styles/main.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>Meme</h1>
+    </header>
+
+
+    <div class="meme-box">
+        <div class="canvas-box">
+            <canvas onclick="strokeOff()" class="canvas-copy" width="500" height="500"></canvas>
+            <canvas onclick="strokeOff()" class="canvas" width="500" height="500"></canvas>
+            <canvas onclick="strokeOff()" class="canvas-bottom" width="500" height="500"></canvas>
+
+        </div>
+
+
+
+        <div class="actions-box">
+            <input onclick="onInputText()" value="" class="txt-input" oninput="setText(value)" type="text"
+                placeholder="Enter text" autofocus>
+            
+                <div class="action-btns">
+                    <div class="func-btns">
+                        <div class="line-btns btns">
+                            <button onclick="onSetLine('up')" class="action-btn"><span>↑</span></button>
+                            <button onclick="onSetLine('down')" class="action-btn"><span>↓</span></button>
+                            <button onclick="onAddLine()" class="action-btn"><span>+</span></button>
+                        </div>
+            
+                        <div class="text-btns btns">
+                            
+                            <button class="action-btn fa fa-solid fa-font"></button>
+                            <button class="action-btn  fa fa-solid fa-pallete"><input onchange="onPallete(value)" type="color"></button>
+                            <select class="size-input action-btn" onchange="setFontSize(value)">
+                                <option value="60">T</option>
+                                <option value="36">36</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                            </select>
+                            
+                        </div>
+            
+                        <div class="align-btns btns">
+                            <button onclick="onAlign('left')" class="action-btn  fa fa-solid fa-ltr"></button>
+                            <button onclick="onAlign('center')" class="action-btn  fa fa-solid fa-center"></button>
+                            <button onclick="onAlign('right')" class="action-btn  fa fa-solid fa-rtl"></button>
+                        </div>
+                    </div>
+
+                    <div class="delete"><button onclick="onDeleteLine()" class="action-btn fa fa-solid fa-trash "><span></span></button></div>
+                    
+                </div>
+
+            <div class="emojis">
+
+            </div>
+
+         
+
+            <div class="download-btns">
+                <a download="file-name" onclick="onSave(this,event)" href=""><button   class="action-btn fa fa-solid fa-save "><span></span></button></a>
+                <a download="file-name" class="donwload" onclick="setDownload(this,event)" href=""><button   class="action-btn fa fa-solid fa-download "><span></span></button></a>
+                <a download="file-name" class="donwload" onclick="setDownload(this,event)" href=""><button   class="action-btn fa fa-solid fa-download "><span></span></button></a>
+            </div>
+        </div>
+
+    </div>
+    <script src="memeGen/proj/js/storage.js"></script>
+    <script src="memeGen/proj/js/home/home.service.js"></script>
+    <script src="memeGen/proj/js/editor/editor.service.js"></script>
+    <script src="memeGen/proj/js/editor/editor.controller.js"></script>
+</body>
+
+</html>

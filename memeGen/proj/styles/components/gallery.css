@@ -1,0 +1,59 @@
+.gallery-container{
+    margin: auto;
+    display: grid;
+    width: 60%;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    grid-template-rows: repeat(auto-fit, 1fr);
+    border: 5px black solid;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+
+    margin-bottom: 3rem;
+}
+
+.gallery-img{
+    margin: auto;
+    border: 1px black solid;
+    height: 200px;
+    display: flex;
+    min-width: 200px; 
+}
+
+.gallery-img.fa-upload{
+    width: 200px;
+}
+
+a.fa.fa-solid.fa-upload::before{
+    content: "\f093";
+    color: orange;
+    font-size: 5rem;
+}
+
+
+.upload{
+    position: relative;
+    
+}
+
+
+.upload input{
+    position: absolute;
+    bottom: 0;
+    border: 1px white solid;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+}
+
+.new-image{
+    width: 200px;
+    margin: auto;
+    display: none;
+ 
+}
+
+.new-image a{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

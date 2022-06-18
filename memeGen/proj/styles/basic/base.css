@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body { 
+    width: 99.1vw;
+    height: 100vh;
+    background-color: rgb(12, 11, 14);
+    color: orange;
+}
+
+.fa.fa-solid::before{
+    font-family: fa-solid;
+    font-size: 1em;
+    margin: auto;
+    position: relative;
+
+}

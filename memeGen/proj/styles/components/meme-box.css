@@ -1,0 +1,13 @@
+.meme-box{
+    /* border: 1px black solid; */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1010px;
+}
+.meme-box{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    /* border: 1px red solid; */
+    justify-content: space-between;
+}

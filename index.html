@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="memeGen/proj/styles/main.css">
+</head>
+
+<body onload="initg()">
+    <div class="flex-container">
+        <nav>
+            <ul>
+                <a href="#"><li>Gallery</li></a>
+                <a href="#"><li>About</li></a>
+            </ul>
+        </nav>
+    
+        <div class="search-box">
+            <div class="search-bar"><span>search:</span><input type="text"></div>
+            <div class="key-words"></div>
+        </div>
+    
+        <header><h1>memeGen</h1></header>
+            
+        <div class="gallery-container">
+            <div class="upload"><a href="#" class="fa fa-solid fa-upload gallery-img"> <input onchange="onLoadImg(value)" id="image-input" accept="image/png, image/jpeg" type="file"></a></div>
+
+           
+        </div>
+    
+        <footer></footer>
+    </div>
+
+
+    <script src="memeGen/proj/js/storage.js"></script>
+    <script src="memeGen/proj/js/editor/editor.service.js"></script>
+    <script src="memeGen/proj/js/home/home.service.js"></script>
+    <script src="memeGen/proj/js/home/home.controller.js"></script>
+</body>
+
+</html>

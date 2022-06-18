@@ -1,0 +1,23 @@
+.search-box{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-top: 1rem;
+    /* border-top: 1px white solid; */
+    /* border-bottom: 1px white solid; */
+    margin-bottom: 0.5rem;
+}
+
+.search-bar{
+    margin-inline-start: 1em;
+    /* border: 1px orange solid; */
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.search-bar input{
+    height: 2em;
+}
